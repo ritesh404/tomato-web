@@ -1,9 +1,20 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
+import axios from "axios";
 
 function App() {
-  const [pNumber, setNumber] = useState("");
+  const [phone_number, setNumber] = useState("");
+
+  function getRedirection() {
+    axios({
+      url: "https://transactions-api.stagingsimpl.com/api/v4/check_eligibility",
+      method: "POST",
+      headers: { Authorization: "2288e2698c572488c83b7409c04ffe19" },
+      data: { amount_in_paise: 50000, phone_number },
+    }).then((r) => {
+      console.log(r);
+    });
+  }
 
   return (
     <>
@@ -31,7 +42,7 @@ function App() {
         </div>
         <div class="shop-cart-cta">
           <div class="shop-cart-cta-price">1kg - ₹500</div>
-          <button class="btn">
+          <button class="btn" onClick={getRedirection}>
             Pay Via Simpl<span class="bg"></span>
           </button>
         </div>
