@@ -35,7 +35,8 @@ function App() {
               type="text"
               id="phone"
               onChange={(val) => {
-                setNumber(val);
+                console.log(val.target.value);
+                setNumber(val.target.value);
               }}
             />
           </div>
