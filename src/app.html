@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%svelte.head%
+		<style>
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
+			}
+			body,
+			html {
+				height: 100%;
+				font-family: 'Open Sans Condensed', sans-serif;
+			}
+			body {
+				background: linear-gradient(15deg, #d33f34 50%, #a61322 50.1%);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="svelte">%svelte.body%</div>
+	</body>
+</html>
