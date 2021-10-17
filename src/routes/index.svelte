@@ -10,10 +10,6 @@
 </script>
 
 <div class="shop-cart">
-	<a
-		href="intent://app.stagingsimpl.com/#Intent;scheme=https;package=com.simpl.android.staging;S.intent_data=f76f8d2030b1c71b9876d81a7352b65c;S.intent_type=Launch%20Pay;end"
-		>test intent</a
-	>
 	<div class="shop-cart-title">Tomato</div>
 	<div class="shop-cart-desc">Fresh as the morning breeze!</div>
 	<div class="shop-cart-slider">
